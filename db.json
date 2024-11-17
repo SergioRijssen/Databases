@@ -1,9 +1,47 @@
 {
   "settings": {
-    "username": "johndoe",
-    "email": "johndoe@example.com",
-    "darkMode": false,
+    "username": "Sergio",
+    "email": "sergio@example.com",
+    "darkMode": true,
     "notifications": true,
-    "sounds": true
-  }
+    "sounds": false
+  },
+  "reports": [
+    {
+      "id": "1",
+      "name": "Damage Report",
+      "damage": {
+        "location": "Warehouse A",
+        "newDamage": true,
+        "type": "Wear and Tear",
+        "date": "2024-11-17",
+        "urgentAction": true,
+        "description": "Wall scuffed near entrance."
+      },
+      "maintenance": {
+        "location": "Warehouse A",
+        "type": "Painting",
+        "costEstimate": "500-1500"
+      },
+      "completed": false
+    },
+    {
+      "id": "2",
+      "name": "Maintenance Report",
+      "damage": {
+        "location": "Warehouse B",
+        "newDamage": false,
+        "type": "Normal Use",
+        "date": "2024-11-16",
+        "urgentAction": false,
+        "description": "Routine checkup."
+      },
+      "maintenance": {
+        "location": "Warehouse B",
+        "type": "Electrical",
+        "costEstimate": "0-500"
+      },
+      "completed": true
+    }
+  ]
 }
