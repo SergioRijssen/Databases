@@ -1,0 +1,9 @@
+{
+  "settings": {
+    "username": "johndoe",
+    "email": "johndoe@example.com",
+    "darkMode": false,
+    "notifications": true,
+    "sounds": true
+  }
+}
