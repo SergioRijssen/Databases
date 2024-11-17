@@ -6,42 +6,23 @@
     "notifications": true,
     "sounds": false
   },
-  "reports": [
+"reports": [
     {
-      "id": "1",
-      "name": "Damage Report",
-      "damage": {
-        "location": "Warehouse A",
-        "newDamage": true,
-        "type": "Wear and Tear",
-        "date": "2024-11-17",
-        "urgentAction": true,
-        "description": "Wall scuffed near entrance."
-      },
-      "maintenance": {
-        "location": "Warehouse A",
-        "type": "Painting",
-        "costEstimate": "500-1500"
-      },
-      "completed": false
-    },
-    {
-      "id": "2",
-      "name": "Maintenance Report",
-      "damage": {
-        "location": "Warehouse B",
-        "newDamage": false,
-        "type": "Normal Use",
-        "date": "2024-11-16",
-        "urgentAction": false,
-        "description": "Routine checkup."
-      },
-      "maintenance": {
-        "location": "Warehouse B",
-        "type": "Electrical",
-        "costEstimate": "0-500"
-      },
-      "completed": true
+        "id": "1",
+        "name": "User Report",
+        "damage": {
+            "location": "Warehouse C",
+            "newDamage": true,
+            "type": "Incident",
+            "date": "2024-11-17",
+            "urgentAction": true,
+            "description": "Forklift accident."
+        },
+        "maintenance": {
+            "location": "Warehouse C",
+            "type": "Plumbing",
+            "costEstimate": "1500+"
+        },
+        "completed": false
     }
-  ]
-}
+]
