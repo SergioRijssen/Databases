@@ -1,0 +1,11 @@
+{
+  "inspections": [
+    { "id": 1, "property": "123 Main St", "status": "pending", "date": "2024-01-01" },
+    { "id": 2, "property": "456 Elm St", "status": "completed", "date": "2024-01-02" },
+    { "id": 3, "property": "789 Pine St", "status": "in-progress", "date": "2024-01-03" }
+  ],
+  "settings": {
+    "darkMode": true,
+    "notifications": true
+  }
+}
