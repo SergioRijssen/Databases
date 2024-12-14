@@ -6,7 +6,6 @@
       "description": "A window was found broken in the main hall.",
       "dueDate": "2024-12-20",
       "priority": "High",
-      "status": "Pending",
       "fields": [
         {
           "name": "location",
@@ -55,7 +54,6 @@
       "description": "Walls in room 12 need a fresh coat of paint.",
       "dueDate": "2024-12-25",
       "priority": "Medium",
-      "status": "In Progress",
       "fields": [
         {
           "name": "location",
@@ -97,7 +95,6 @@
       "description": "AC in conference room not working.",
       "dueDate": "2024-12-15",
       "priority": "High",
-      "status": "Completed",
       "fields": [
         {
           "name": "installationType",
@@ -146,7 +143,6 @@
       "description": "Tenant made changes to the wall without approval.",
       "dueDate": "2024-12-30",
       "priority": "Low",
-      "status": "Pending",
       "fields": [
         {
           "name": "existingDocs",
