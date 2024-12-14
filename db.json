@@ -1,40 +1,201 @@
 {
   "reports": [
     {
-      "id": 1,
-      "title": "Broken Window",
-      "type": "Damage",
+      "id": "damage",
+      "title": "Damage Recording",
       "description": "A window was found broken in the main hall.",
       "dueDate": "2024-12-20",
+      "priority": "High",
       "status": "Pending",
-      "priority": "High"
+      "fields": [
+        {
+          "name": "location",
+          "label": "Location",
+          "type": "text",
+          "value": "Main Hall",
+          "required": true,
+          "placeholder": "Enter location"
+        },
+        {
+          "name": "newDamage",
+          "label": "New Damage",
+          "type": "radio",
+          "choices": ["Yes", "No"],
+          "value": "Yes",
+          "required": true
+        },
+        {
+          "name": "damageType",
+          "label": "Type of Damage",
+          "type": "select",
+          "choices": ["Intentional", "Wear and Tear", "Violence"],
+          "value": "Wear and Tear",
+          "required": true
+        },
+        {
+          "name": "date",
+          "label": "Date",
+          "type": "date",
+          "value": "2024-12-18",
+          "required": true
+        },
+        {
+          "name": "description",
+          "label": "Description",
+          "type": "text",
+          "value": "Broken glass panel needs replacement.",
+          "required": false,
+          "placeholder": "Add a description"
+        }
+      ]
     },
     {
-      "id": 2,
-      "title": "Painting Required",
-      "type": "Maintenance",
+      "id": "maintenance",
+      "title": "Deferred Maintenance",
       "description": "Walls in room 12 need a fresh coat of paint.",
       "dueDate": "2024-12-25",
+      "priority": "Medium",
       "status": "In Progress",
-      "priority": "Medium"
+      "fields": [
+        {
+          "name": "location",
+          "label": "Location",
+          "type": "text",
+          "value": "Room 12",
+          "required": true,
+          "placeholder": "Enter location"
+        },
+        {
+          "name": "maintenanceType",
+          "label": "Type of Maintenance",
+          "type": "select",
+          "choices": ["Painting", "Electrical"],
+          "value": "Painting",
+          "required": true
+        },
+        {
+          "name": "urgentAction",
+          "label": "Urgent Action Required",
+          "type": "radio",
+          "choices": ["Yes", "No"],
+          "value": "No",
+          "required": true
+        },
+        {
+          "name": "costEstimate",
+          "label": "Cost Estimate",
+          "type": "select",
+          "choices": ["0-500", "500-1,500", "1,500+"],
+          "value": "500-1,500",
+          "required": true
+        }
+      ]
     },
     {
-      "id": 3,
-      "title": "Air Conditioner Issue",
-      "type": "Installation",
+      "id": "installation",
+      "title": "Technical Installations",
       "description": "AC in conference room not working.",
       "dueDate": "2024-12-15",
+      "priority": "High",
       "status": "Completed",
-      "priority": "High"
+      "fields": [
+        {
+          "name": "installationType",
+          "label": "Installation Type",
+          "type": "select",
+          "choices": ["Cooling", "Heating"],
+          "value": "Cooling",
+          "required": true
+        },
+        {
+          "name": "reportedIssues",
+          "label": "Reported Issues",
+          "type": "text",
+          "value": "AC stopped cooling entirely.",
+          "required": true,
+          "placeholder": "Describe any issues"
+        },
+        {
+          "name": "testProcedure",
+          "label": "Test Procedure",
+          "type": "link",
+          "value": "test-procedure.pdf",
+          "required": false
+        },
+        {
+          "name": "approved",
+          "label": "Approved",
+          "type": "radio",
+          "choices": ["Yes", "No"],
+          "value": "Yes",
+          "required": true
+        },
+        {
+          "name": "remarks",
+          "label": "Remarks",
+          "type": "text",
+          "value": "System fully repaired.",
+          "placeholder": "Additional remarks",
+          "required": false
+        }
+      ]
     },
     {
-      "id": 4,
+      "id": "modification",
       "title": "Unauthorized Modifications",
-      "type": "Modification",
       "description": "Tenant made changes to the wall without approval.",
       "dueDate": "2024-12-30",
+      "priority": "Low",
       "status": "Pending",
-      "priority": "Low"
+      "fields": [
+        {
+          "name": "existingDocs",
+          "label": "Existing Documentation",
+          "type": "link",
+          "value": "modifications-docs.pdf",
+          "required": false
+        },
+        {
+          "name": "location",
+          "label": "Modification Location",
+          "type": "text",
+          "value": "Living Room",
+          "required": true,
+          "placeholder": "Enter location"
+        },
+        {
+          "name": "executedBy",
+          "label": "Executed By",
+          "type": "radio",
+          "choices": ["Tenant", "Contractor", "Unknown"],
+          "value": "Tenant",
+          "required": true
+        },
+        {
+          "name": "modificationDescription",
+          "label": "Modification Description",
+          "type": "text",
+          "value": "Partition wall installed without authorization.",
+          "required": true,
+          "placeholder": "Describe the modification"
+        },
+        {
+          "name": "actionToTake",
+          "label": "Action to Take",
+          "type": "select",
+          "choices": ["Accept", "Inspect", "Remove", "Adjust and Inspect"],
+          "value": "Inspect",
+          "required": true
+        },
+        {
+          "name": "remarks",
+          "label": "Remarks",
+          "type": "text",
+          "value": "",
+          "placeholder": "Additional remarks",
+          "required": false
+        }
+      ]
     }
   ]
 }
