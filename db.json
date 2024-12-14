@@ -4,7 +4,7 @@
       "id": "damage",
       "title": "Damage Recording",
       "description": "A window was found broken in the main hall.",
-      "dueDate": "2024-12-20",
+      "dueDate": "2024-12-20T00:00:00",
       "priority": "High",
       "fields": [
         {
@@ -52,7 +52,7 @@
       "id": "maintenance",
       "title": "Deferred Maintenance",
       "description": "Walls in room 12 need a fresh coat of paint.",
-      "dueDate": "2024-12-25",
+      "dueDate": "2024-12-25T00:00:00",
       "priority": "Medium",
       "fields": [
         {
@@ -93,7 +93,7 @@
       "id": "installation",
       "title": "Technical Installations",
       "description": "AC in conference room not working.",
-      "dueDate": "2024-12-15",
+      "dueDate": "2024-12-15T00:00:00",
       "priority": "High",
       "fields": [
         {
@@ -141,7 +141,7 @@
       "id": "modification",
       "title": "Unauthorized Modifications",
       "description": "Tenant made changes to the wall without approval.",
-      "dueDate": "2024-12-30",
+      "dueDate": "2024-12-30T00:00:00",
       "priority": "Low",
       "fields": [
         {
