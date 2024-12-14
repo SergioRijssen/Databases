@@ -2,184 +2,39 @@
   "reports": [
     {
       "id": 1,
-      "title": "Inspection Report - Damage Assessment",
-      "description": "Assess damages caused by recent storm.",
-      "type": "damage",
-      "fields": [
-        {
-          "name": "location",
-          "label": "Location",
-          "type": "text",
-          "value": "Building A - 2nd Floor",
-          "required": true
-        },
-        {
-          "name": "newDamage",
-          "label": "New Damage",
-          "type": "radio",
-          "choices": ["Yes", "No"],
-          "value": "Yes",
-          "required": true
-        },
-        {
-          "name": "damageType",
-          "label": "Type of Damage",
-          "type": "select",
-          "choices": ["Intentional", "Wear and Tear", "Storm Damage"],
-          "value": "Storm Damage",
-          "required": true
-        },
-        {
-          "name": "date",
-          "label": "Date",
-          "type": "date",
-          "value": "2024-12-12",
-          "required": true
-        },
-        {
-          "name": "description",
-          "label": "Description",
-          "type": "textarea",
-          "value": "Roof shingles and ceiling tiles damaged.",
-          "required": false
-        }
-      ]
+      "title": "Broken Window",
+      "type": "Damage",
+      "description": "A window was found broken in the main hall.",
+      "dueDate": "2024-12-20",
+      "status": "Pending",
+      "priority": "High"
     },
     {
       "id": 2,
-      "title": "Maintenance Report - HVAC System",
-      "description": "Deferred maintenance on HVAC system.",
-      "type": "maintenance",
-      "fields": [
-        {
-          "name": "location",
-          "label": "Location",
-          "type": "text",
-          "value": "Main Hall",
-          "required": true
-        },
-        {
-          "name": "maintenanceType",
-          "label": "Type of Maintenance",
-          "type": "select",
-          "choices": ["Electrical", "Plumbing", "HVAC"],
-          "value": "HVAC",
-          "required": true
-        },
-        {
-          "name": "urgentAction",
-          "label": "Urgent Action Required",
-          "type": "radio",
-          "choices": ["Yes", "No"],
-          "value": "Yes",
-          "required": true
-        },
-        {
-          "name": "costEstimate",
-          "label": "Cost Estimate",
-          "type": "select",
-          "choices": ["0-500", "500-1,500", "1,500+"],
-          "value": "500-1,500",
-          "required": true
-        },
-        {
-          "name": "remarks",
-          "label": "Remarks",
-          "type": "textarea",
-          "value": "System requires urgent servicing to prevent breakdown.",
-          "required": false
-        }
-      ]
+      "title": "Painting Required",
+      "type": "Maintenance",
+      "description": "Walls in room 12 need a fresh coat of paint.",
+      "dueDate": "2024-12-25",
+      "status": "In Progress",
+      "priority": "Medium"
     },
     {
       "id": 3,
-      "title": "Installation Report - New Equipment",
-      "description": "Inspection of newly installed cooling units.",
-      "type": "installations",
-      "fields": [
-        {
-          "name": "installationType",
-          "label": "Installation Type",
-          "type": "select",
-          "choices": ["Cooling", "Heating"],
-          "value": "Cooling",
-          "required": true
-        },
-        {
-          "name": "reportedIssues",
-          "label": "Reported Issues",
-          "type": "textarea",
-          "value": "Cooling units making unusual noises.",
-          "required": true
-        },
-        {
-          "name": "testProcedure",
-          "label": "Test Procedure",
-          "type": "link",
-          "value": "test-procedure.pdf",
-          "required": false
-        },
-        {
-          "name": "approved",
-          "label": "Approved",
-          "type": "radio",
-          "choices": ["Yes", "No"],
-          "value": "No",
-          "required": true
-        },
-        {
-          "name": "remarks",
-          "label": "Remarks",
-          "type": "textarea",
-          "value": "Testing incomplete. Requires further inspection.",
-          "required": false
-        }
-      ]
+      "title": "Air Conditioner Issue",
+      "type": "Installation",
+      "description": "AC in conference room not working.",
+      "dueDate": "2024-12-15",
+      "status": "Completed",
+      "priority": "High"
     },
     {
       "id": 4,
-      "title": "Modification Report - Tenant Changes",
-      "description": "Inspection of tenant's structural modifications.",
-      "type": "modifications",
-      "fields": [
-        {
-          "name": "location",
-          "label": "Modification Location",
-          "type": "text",
-          "value": "Unit 3B",
-          "required": true
-        },
-        {
-          "name": "executedBy",
-          "label": "Executed By",
-          "type": "radio",
-          "choices": ["Tenant", "Contractor", "Unknown"],
-          "value": "Tenant",
-          "required": true
-        },
-        {
-          "name": "modificationDescription",
-          "label": "Modification Description",
-          "type": "textarea",
-          "value": "Tenant added partition walls.",
-          "required": true
-        },
-        {
-          "name": "actionToTake",
-          "label": "Action to Take",
-          "type": "select",
-          "choices": ["Accept", "Inspect", "Remove", "Adjust and Inspect"],
-          "value": "Inspect",
-          "required": true
-        },
-        {
-          "name": "remarks",
-          "label": "Remarks",
-          "type": "textarea",
-          "value": "Walls are compliant with building codes.",
-          "required": false
-        }
-      ]
+      "title": "Unauthorized Modifications",
+      "type": "Modification",
+      "description": "Tenant made changes to the wall without approval.",
+      "dueDate": "2024-12-30",
+      "status": "Pending",
+      "priority": "Low"
     }
   ]
 }
