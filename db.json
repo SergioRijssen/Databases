@@ -1,11 +1,51 @@
 {
   "reports": [
     {
-      "id": "damage",
-      "title": "Damage Recording",
-      "description": "A window was found broken in the main hall.",
-      "dueDate": "2024-12-20T00:00:00",
+      "id": "damage001",
+      "title": "Window Damage",
+      "description": "Broken window in the conference room due to unknown reasons.",
+      "dueDate": "2024-12-22T00:00:00",
       "priority": "High",
+      "fields": [
+        {
+          "name": "location",
+          "label": "Location",
+          "type": "text",
+          "value": "Conference Room",
+          "required": true,
+          "placeholder": "Enter the location of damage"
+        },
+        {
+          "name": "damageType",
+          "label": "Damage Type",
+          "type": "select",
+          "choices": ["Accidental", "Vandalism", "Natural"],
+          "value": "Accidental",
+          "required": true
+        },
+        {
+          "name": "repairRequired",
+          "label": "Repair Required?",
+          "type": "radio",
+          "choices": ["Yes", "No"],
+          "value": "Yes",
+          "required": true
+        },
+        {
+          "name": "dateReported",
+          "label": "Date Reported",
+          "type": "date",
+          "value": "2024-12-15",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "maintenance002",
+      "title": "AC Maintenance",
+      "description": "The AC in the main hall is not functioning properly.",
+      "dueDate": "2024-12-28T00:00:00",
+      "priority": "Medium",
       "fields": [
         {
           "name": "location",
@@ -13,151 +53,88 @@
           "type": "text",
           "value": "Main Hall",
           "required": true,
-          "placeholder": "Enter location"
+          "placeholder": "Enter the location for maintenance"
         },
         {
-          "name": "newDamage",
-          "label": "New Damage",
-          "type": "radio",
-          "choices": ["Yes", "No"],
-          "value": "Yes",
-          "required": true
-        },
-        {
-          "name": "damageType",
-          "label": "Type of Damage",
+          "name": "issueType",
+          "label": "Issue Type",
           "type": "select",
-          "choices": ["Intentional", "Wear and Tear", "Violence"],
-          "value": "Wear and Tear",
+          "choices": ["Cooling Issue", "Compressor Failure", "General Maintenance"],
+          "value": "Cooling Issue",
           "required": true
         },
         {
-          "name": "date",
-          "label": "Date",
-          "type": "date",
-          "value": "2024-12-18",
+          "name": "priorityLevel",
+          "label": "Priority Level",
+          "type": "radio",
+          "choices": ["Low", "Medium", "High"],
+          "value": "Medium",
           "required": true
         },
         {
-          "name": "description",
-          "label": "Description",
+          "name": "maintenanceNotes",
+          "label": "Notes",
           "type": "text",
-          "value": "Broken glass panel needs replacement.",
+          "value": "Temperature not reaching optimal level.",
           "required": false,
-          "placeholder": "Add a description"
+          "placeholder": "Add maintenance notes"
         }
       ]
     },
     {
-      "id": "maintenance",
-      "title": "Deferred Maintenance",
-      "description": "Walls in room 12 need a fresh coat of paint.",
-      "dueDate": "2024-12-25T00:00:00",
-      "priority": "Medium",
-      "fields": [
-        {
-          "name": "location",
-          "label": "Location",
-          "type": "text",
-          "value": "Room 12",
-          "required": true,
-          "placeholder": "Enter location"
-        },
-        {
-          "name": "maintenanceType",
-          "label": "Type of Maintenance",
-          "type": "select",
-          "choices": ["Painting", "Electrical"],
-          "value": "Painting",
-          "required": true
-        },
-        {
-          "name": "urgentAction",
-          "label": "Urgent Action Required",
-          "type": "radio",
-          "choices": ["Yes", "No"],
-          "value": "No",
-          "required": true
-        },
-        {
-          "name": "costEstimate",
-          "label": "Cost Estimate",
-          "type": "select",
-          "choices": ["0-500", "500-1,500", "1,500+"],
-          "value": "500-1,500",
-          "required": true
-        }
-      ]
-    },
-    {
-      "id": "installation",
-      "title": "Technical Installations",
-      "description": "AC in conference room not working.",
-      "dueDate": "2024-12-15T00:00:00",
-      "priority": "High",
-      "fields": [
-        {
-          "name": "installationType",
-          "label": "Installation Type",
-          "type": "select",
-          "choices": ["Cooling", "Heating"],
-          "value": "Cooling",
-          "required": true
-        },
-        {
-          "name": "reportedIssues",
-          "label": "Reported Issues",
-          "type": "text",
-          "value": "AC stopped cooling entirely.",
-          "required": true,
-          "placeholder": "Describe any issues"
-        },
-        {
-          "name": "testProcedure",
-          "label": "Test Procedure",
-          "type": "link",
-          "value": "test-procedure.pdf",
-          "required": false
-        },
-        {
-          "name": "approved",
-          "label": "Approved",
-          "type": "radio",
-          "choices": ["Yes", "No"],
-          "value": "Yes",
-          "required": true
-        },
-        {
-          "name": "remarks",
-          "label": "Remarks",
-          "type": "text",
-          "value": "System fully repaired.",
-          "placeholder": "Additional remarks",
-          "required": false
-        }
-      ]
-    },
-    {
-      "id": "modification",
-      "title": "Unauthorized Modifications",
-      "description": "Tenant made changes to the wall without approval.",
-      "dueDate": "2024-12-30T00:00:00",
+      "id": "inspection003",
+      "title": "Structural Inspection",
+      "description": "Annual inspection for structural safety in the warehouse.",
+      "dueDate": "2025-01-05T00:00:00",
       "priority": "Low",
       "fields": [
         {
-          "name": "existingDocs",
-          "label": "Existing Documentation",
-          "type": "link",
-          "value": "modifications-docs.pdf",
-          "required": false
+          "name": "inspectionLocation",
+          "label": "Inspection Location",
+          "type": "text",
+          "value": "Warehouse",
+          "required": true,
+          "placeholder": "Enter the inspection location"
         },
         {
-          "name": "location",
+          "name": "inspectionType",
+          "label": "Inspection Type",
+          "type": "select",
+          "choices": ["Safety", "Compliance", "General"],
+          "value": "Safety",
+          "required": true
+        },
+        {
+          "name": "inspectorName",
+          "label": "Inspector Name",
+          "type": "text",
+          "value": "John Doe",
+          "required": true,
+          "placeholder": "Enter inspector's name"
+        },
+        {
+          "name": "completionDate",
+          "label": "Expected Completion Date",
+          "type": "date",
+          "value": "2025-01-15",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "modification004",
+      "title": "Unauthorized Modifications",
+      "description": "Tenant made unauthorized modifications to the balcony railing.",
+      "dueDate": "2024-12-31T00:00:00",
+      "priority": "High",
+      "fields": [
+        {
+          "name": "modificationLocation",
           "label": "Modification Location",
           "type": "text",
-          "value": "Living Room",
+          "value": "Balcony",
           "required": true,
-          "placeholder": "Enter location"
+          "placeholder": "Enter location of the modification"
         },
         {
           "name": "executedBy",
@@ -168,19 +145,11 @@
           "required": true
         },
         {
-          "name": "modificationDescription",
-          "label": "Modification Description",
-          "type": "text",
-          "value": "Partition wall installed without authorization.",
-          "required": true,
-          "placeholder": "Describe the modification"
-        },
-        {
-          "name": "actionToTake",
-          "label": "Action to Take",
+          "name": "actionRequired",
+          "label": "Action Required",
           "type": "select",
-          "choices": ["Accept", "Inspect", "Remove", "Adjust and Inspect"],
-          "value": "Inspect",
+          "choices": ["Inspection", "Approval", "Restoration"],
+          "value": "Inspection",
           "required": true
         },
         {
@@ -188,8 +157,8 @@
           "label": "Remarks",
           "type": "text",
           "value": "",
-          "placeholder": "Additional remarks",
-          "required": false
+          "required": false,
+          "placeholder": "Additional remarks"
         }
       ]
     }
