@@ -1,25 +1,25 @@
 {
   "reports": [
     {
-      "id": "damage001",
-      "title": "Window Damage",
-      "description": "Broken window in the conference room due to unknown reasons.",
-      "dueDate": "2024-12-22T00:00:00",
+      "id": "damageRecording",
+      "title": "Damage Recording Report",
+      "description": "Inspect and record any new or existing damages in the area.",
+      "dueDate": "2024-12-31T00:00:00",
       "priority": "High",
       "fields": [
         {
           "name": "location",
           "label": "Location",
           "type": "text",
-          "value": "Conference Room",
+          "value": "Main Office",
           "required": true,
-          "placeholder": "Enter the location of damage"
+          "placeholder": "Enter the location of the damage"
         },
         {
           "name": "damageType",
           "label": "Damage Type",
           "type": "select",
-          "choices": ["Accidental", "Vandalism", "Natural"],
+          "choices": ["Accidental", "Wear and Tear", "Natural Causes"],
           "value": "Accidental",
           "required": true
         },
@@ -41,105 +41,98 @@
       ]
     },
     {
-      "id": "maintenance002",
-      "title": "AC Maintenance",
-      "description": "The AC in the main hall is not functioning properly.",
-      "dueDate": "2024-12-28T00:00:00",
+      "id": "deferredMaintenance",
+      "title": "Deferred Maintenance Report",
+      "description": "Record deferred maintenance tasks and observations.",
+      "dueDate": "2025-01-15T00:00:00",
       "priority": "Medium",
       "fields": [
         {
           "name": "location",
           "label": "Location",
           "type": "text",
-          "value": "Main Hall",
+          "value": "Warehouse",
           "required": true,
           "placeholder": "Enter the location for maintenance"
         },
         {
-          "name": "issueType",
-          "label": "Issue Type",
+          "name": "maintenanceType",
+          "label": "Maintenance Type",
           "type": "select",
-          "choices": ["Cooling Issue", "Compressor Failure", "General Maintenance"],
-          "value": "Cooling Issue",
+          "choices": ["Painting", "Electrical", "Plumbing"],
+          "value": "Painting",
           "required": true
         },
         {
-          "name": "priorityLevel",
-          "label": "Priority Level",
+          "name": "urgent",
+          "label": "Is it urgent?",
           "type": "radio",
-          "choices": ["Low", "Medium", "High"],
-          "value": "Medium",
+          "choices": ["Yes", "No"],
+          "value": "No",
           "required": true
         },
         {
-          "name": "maintenanceNotes",
-          "label": "Notes",
-          "type": "text",
-          "value": "Temperature not reaching optimal level.",
+          "name": "remarks",
+          "label": "Remarks",
+          "type": "textarea",
+          "value": "",
           "required": false,
-          "placeholder": "Add maintenance notes"
+          "placeholder": "Additional details or remarks"
         }
       ]
     },
     {
-      "id": "inspection003",
-      "title": "Structural Inspection",
-      "description": "Annual inspection for structural safety in the warehouse.",
-      "dueDate": "2025-01-05T00:00:00",
+      "id": "technicalInstallations",
+      "title": "Technical Installations Report",
+      "description": "Inspect and document the state of technical installations.",
+      "dueDate": "2025-02-01T00:00:00",
       "priority": "Low",
       "fields": [
         {
-          "name": "inspectionLocation",
-          "label": "Inspection Location",
-          "type": "text",
-          "value": "Warehouse",
-          "required": true,
-          "placeholder": "Enter the inspection location"
-        },
-        {
-          "name": "inspectionType",
-          "label": "Inspection Type",
+          "name": "installationType",
+          "label": "Installation Type",
           "type": "select",
-          "choices": ["Safety", "Compliance", "General"],
-          "value": "Safety",
+          "choices": ["HVAC", "Electrical", "Plumbing"],
+          "value": "HVAC",
           "required": true
         },
         {
-          "name": "inspectorName",
-          "label": "Inspector Name",
-          "type": "text",
-          "value": "John Doe",
-          "required": true,
-          "placeholder": "Enter inspector's name"
+          "name": "inspectionOutcome",
+          "label": "Inspection Outcome",
+          "type": "radio",
+          "choices": ["Pass", "Fail"],
+          "value": "Pass",
+          "required": true
         },
         {
-          "name": "completionDate",
-          "label": "Expected Completion Date",
-          "type": "date",
-          "value": "2025-01-15",
-          "required": true
+          "name": "comments",
+          "label": "Comments",
+          "type": "textarea",
+          "value": "",
+          "required": false,
+          "placeholder": "Add any comments or notes"
         }
       ]
     },
     {
-      "id": "modification004",
-      "title": "Unauthorized Modifications",
-      "description": "Tenant made unauthorized modifications to the balcony railing.",
-      "dueDate": "2024-12-31T00:00:00",
+      "id": "modifications",
+      "title": "Modifications Report",
+      "description": "Record unauthorized modifications made to the property.",
+      "dueDate": "2025-03-01T00:00:00",
       "priority": "High",
       "fields": [
         {
-          "name": "modificationLocation",
-          "label": "Modification Location",
-          "type": "text",
-          "value": "Balcony",
+          "name": "modificationDetails",
+          "label": "Modification Details",
+          "type": "textarea",
+          "value": "",
           "required": true,
-          "placeholder": "Enter location of the modification"
+          "placeholder": "Describe the modifications"
         },
         {
-          "name": "executedBy",
-          "label": "Executed By",
-          "type": "radio",
+          "name": "responsibleParty",
+          "label": "Responsible Party",
+          "type": "select",
           "choices": ["Tenant", "Contractor", "Unknown"],
           "value": "Tenant",
           "required": true
@@ -151,14 +144,6 @@
           "choices": ["Inspection", "Approval", "Restoration"],
           "value": "Inspection",
           "required": true
-        },
-        {
-          "name": "remarks",
-          "label": "Remarks",
-          "type": "text",
-          "value": "",
-          "required": false,
-          "placeholder": "Additional remarks"
         }
       ]
     }
